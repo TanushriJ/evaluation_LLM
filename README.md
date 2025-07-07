@@ -23,20 +23,8 @@ git clone <your-repo-url>
 cd <your-repo-directory>
 ```
 
-### 2. Prepare Data Files
-Place the following Excel files in the project directory:
-- `New_Documents_Silver Questions & Answers.xlsx`
-- `Golden_questions.xlsx`
-- `No shared facts.xlsx`
 
-### 3. Environment Setup
-Create a Python virtual environment and activate it:
-```
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 4. Install Required Packages
+### 2. Install Required Packages
 Install dependencies using pip:
 ```
 pip install -r requirements.txt
@@ -47,7 +35,7 @@ If you do not have a `requirements.txt`, use:
 pip install openai azure-openai python-dotenv pandas numpy selfcheckgpt asyncio
 ```
 
-### 5. Environment Variables
+### 3. Environment Variables
 Create a `.env` file in the project root with the following content:
 ```
 OPENAI_API_KEY=your-azure-openai-api-key
@@ -58,7 +46,7 @@ BASE_URL=https://your-bot-base-url
 ```
 Replace the values with your actual credentials and endpoints.
 
-### 6. Running the Notebook
+### 4. Running the Notebook
 Open `correctness_new_edited_hrchat.ipynb` in VS Code or Jupyter Lab/Notebook and run the cells in order. Make sure your virtual environment is activated and the required packages are installed.
 
 ## Comments and Documentation
