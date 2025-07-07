@@ -16,15 +16,10 @@ This project evaluates the correctness of an HR chatbot's answers by comparing t
 - Excel files: HR Q&A datasets (not included here, see below).
 
 ## Setup Instructions
-
-### 1. Clone the Repository
-```
-git clone <your-repo-url>
-cd <your-repo-directory>
 ```
 
 
-### 2. Install Required Packages
+### 1. Install Required Packages
 Install dependencies using pip:
 ```
 pip install -r requirements.txt
@@ -35,7 +30,7 @@ If you do not have a `requirements.txt`, use:
 pip install openai azure-openai python-dotenv pandas numpy selfcheckgpt asyncio
 ```
 
-### 3. Environment Variables
+### 2. Environment Variables
 Create a `.env` file in the project root with the following content:
 ```
 OPENAI_API_KEY=your-azure-openai-api-key
@@ -46,7 +41,7 @@ BASE_URL=https://your-bot-base-url
 ```
 Replace the values with your actual credentials and endpoints.
 
-### 4. Running the Notebook
+### 3. Running the Notebook
 Open `correctness_new_edited_hrchat.ipynb` in VS Code or Jupyter Lab/Notebook and run the cells in order. Make sure your virtual environment is activated and the required packages are installed.
 
 ## Comments and Documentation
